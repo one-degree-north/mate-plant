@@ -6,3 +6,6 @@ class Comms:
 
     def send(self):
         self.serial.write("a".encode())
+
+    def read(self):
+        return self.serial.readline().decode()
