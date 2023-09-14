@@ -8,4 +8,4 @@ class Comms:
         self.serial.write("a".encode())
 
     def read(self):
-        return self.serial.readline().decode()
+        return self.serial.readline().decode().strip()
